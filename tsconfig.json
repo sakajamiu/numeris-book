@@ -17,14 +17,11 @@
     "paths": {
      
       "components/*": ["src/components/*"],
-      "config/*": ["src/config/*"],
       "assets/*": ["src/assets/*"],
       "hoc/*": ["src/hoc/*"],
-      "hooks/*": ["src/hooks/*"],
       "interfaces/*": ["src/interfaces/*"],
       "lib/*": ["src/lib/*"],
       "store/*": ["src/store/*"],
-      "utils/*": ["src/utils/*"],
       "routes/*": ["src/routes/*"],
       "pages/*": ["src/pages/*"],
     },

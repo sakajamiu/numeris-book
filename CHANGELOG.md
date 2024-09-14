@@ -1,0 +1,1 @@
+- project setup, configuration and architecture
