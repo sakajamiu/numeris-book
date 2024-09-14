@@ -1,0 +1,17 @@
+public/
+node_modules/
+package.json
+tsconfig.json
+.prettierrc
+README.md
+CHANGELOG.md
+src/index.css
+postcss.config.js
+tsconfig.tsbuildinfo
+.github/*
+tailwind.config.js
+index.html
+src/assets/image/*
+src/assets/font/*
+vite.config.ts
+.prettierignore
