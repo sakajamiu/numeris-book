@@ -18,8 +18,6 @@ export default defineConfig({
       // @ts-ignore
       "interfaces": path.resolve(__dirname, './src/interfaces'),
       // @ts-ignore
-      "lib": path.resolve(__dirname, './src/lib'),
-      // @ts-ignore
       "store": path.resolve(__dirname, './src/store'),
       // @ts-ignore
       "routes": path.resolve(__dirname, './src/routes'),

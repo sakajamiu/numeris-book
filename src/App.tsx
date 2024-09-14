@@ -1,5 +1,14 @@
+import { Suspense, lazy } from 'react';
+import LoadingIndicator from 'components/atoms/a-loading-indicator';
+
+const Routes = lazy(() => import('./routes'));
+
 function App() {
-  return <p className="p-3 text-red-500"> I am here !</p>;
+  return (
+    <Suspense fallback={<LoadingIndicator />}>
+      <Routes />
+    </Suspense>
+  );
 }
 
 export default App;

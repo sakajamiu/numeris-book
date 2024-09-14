@@ -1,1 +1,2 @@
+- lint,husky and tailwind configuration
 - project setup, configuration and architecture

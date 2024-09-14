@@ -18,7 +18,7 @@ tsconfig.tsbuildinfo
 .eslintignore
 tailwind.config.js
 index.html
-src/assets/image/*
+src/assets/images/*
 src/assets/font/*
 .prettierignore
 index.css
