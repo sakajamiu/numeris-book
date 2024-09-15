@@ -6,6 +6,9 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  server:{
+    open:'/dashboard'
+  },
   resolve: {
     alias: {
       
@@ -23,6 +26,8 @@ export default defineConfig({
       "routes": path.resolve(__dirname, './src/routes'),
       // @ts-ignore
       "pages": path.resolve(__dirname, './src/pages'),
+      //@ts-ignore
+      "utils":path.resolve(__dirname, './src/utils'),
       
     },
   },

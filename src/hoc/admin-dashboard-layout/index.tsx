@@ -24,7 +24,7 @@ const AdminDashboardLayout = () => {
         className=" absolute left-0 min-h-screen w-full  divide-y bg-[#F5F6FA] px-5 lg:left-64 lg:w-[calc(100%-16rem)]   "
       >
         <TopNavigation />
-        <section className="py-5">
+        <section className="py-8">
           <Outlet />
         </section>
       </div>
