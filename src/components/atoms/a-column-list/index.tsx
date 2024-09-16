@@ -1,8 +1,8 @@
 interface Props {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   titleClassName: string;
-  subtitleClassName: string;
+  subtitleClassName?: string;
   className?: string;
   dir?: string;
 }

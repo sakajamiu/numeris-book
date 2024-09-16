@@ -1,3 +1,8 @@
+/**
+ * This component render activity for invoice page and invoice details
+ * only pass in the timeline as true of you want to render it as a steeper/timeline
+ */
+
 import { ActivityCardProps } from 'interfaces/invoice-page.type';
 import clsx from 'clsx';
 
@@ -7,6 +12,7 @@ const ActivityCard = ({
   activity,
   day,
   description,
+  receiver,
   timeline,
 }: ActivityCardProps & { timeline?: boolean }) => {
   return (
@@ -31,6 +37,8 @@ const ActivityCard = ({
             <p className=" text-[0.875rem] leading-[1.4rem] tracking-[0.3%] text-Grey">
               <span>{activity}</span>{' '}
               <span className="font-medium text-[#000000]">{description}</span>
+              {receiver && <span> to</span>}
+              {receiver && <span className="font-medium text-[#000000]"> {receiver}</span>}
             </p>
           </div>
         </div>

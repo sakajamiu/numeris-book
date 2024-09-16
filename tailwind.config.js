@@ -13,7 +13,9 @@ export default {
         blue:'#003EFF',
         black: '#1F1F23',
         Lightgrey:'#F6F8FA',
-        grey3 :'#666F77'
+        grey3 :'#666F77',
+        grey2:'#B7BDCF',
+        ash:'#666F77',
       }
     },
   },

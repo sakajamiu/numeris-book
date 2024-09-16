@@ -1,3 +1,4 @@
+- invoice page
 - dashboard page layout
 - lint,husky and tailwind configuration
 - project setup, configuration and architecture

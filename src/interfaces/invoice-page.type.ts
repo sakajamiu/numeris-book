@@ -28,4 +28,18 @@ export interface ActivityCardProps {
   day: string;
   activity: string;
   description: string;
+  receiver?: string;
+}
+
+export interface ItemsProps {
+  item: string;
+  quantity: string;
+  unitPrice: string;
+  total: string;
+  description?: string;
+}
+
+export interface PaymentCardProps {
+  title: string;
+  subtitle: string;
 }

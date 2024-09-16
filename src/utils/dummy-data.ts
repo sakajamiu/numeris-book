@@ -5,6 +5,7 @@ import type {
   ActionCardProps,
   InvoiceListProps,
   ActivityCardProps,
+  ItemsProps,
 } from 'interfaces/invoice-page.type';
 import SettingIcon from 'assets/icons/setting';
 import BeneficiaryIcon from 'assets/icons/beneficiary';
@@ -126,5 +127,99 @@ export const RecentActivitiesData: ActivityCardProps[] = [
     day: 'Yesterday, 12:05PM',
     activity: 'Created invoice',
     description: ' 00239434/Olaniyi Ojo Adewale',
+  },
+];
+export const InvoiceActivityData: ActivityCardProps[] = [
+  {
+    image: UserImage,
+    title: 'You',
+    day: 'Today, 12:20PM',
+    activity: 'Created invoice',
+    description: ' 00239434/Olaniyi Ojo Adewale',
+  },
+  {
+    image: UserImage,
+    title: 'You',
+    day: 'Today, 12:20PM',
+    activity: 'Sent invoice',
+    description: ' 00239434/Olaniyi Ojo Adewale',
+    receiver: 'Olaniyi Ojo Adewale',
+  },
+  {
+    image: UserImage,
+    title: 'Payment Confirmed',
+    day: 'Today, 12:20PM',
+    activity: 'You manually confirmed a partial payment of ',
+    description: '$503,000.00',
+  },
+  {
+    image: UserImage,
+    title: 'Payment Confirmed',
+    day: 'Today, 12:20PM',
+    activity: 'You manually confirmed a full payment of ',
+    description: '$6,000,000.00',
+  },
+  {
+    image: UserImage,
+    title: 'You',
+    day: 'Today, 12:20PM',
+    activity: 'Sent invoice',
+    description: ' 00239434/Olaniyi Ojo Adewale',
+    receiver: 'Olaniyi Ojo Adewale',
+  },
+];
+export const ItemBoughtData: ItemsProps[] = [
+  {
+    item: 'Email Marketing',
+    description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ',
+    quantity: '10',
+    unitPrice: '$1,500',
+    total: '$15,000.00',
+  },
+  {
+    item: 'Video looping effect',
+    quantity: '6',
+    unitPrice: '$1,110,500',
+    total: '$6,663,000.00',
+  },
+  {
+    item: 'Graphic design for emails',
+    quantity: '7',
+    unitPrice: '$2,750',
+    total: '$19,250.00',
+    description: 'Tsit voluptatem accusantium ',
+  },
+  {
+    item: 'Video looping effect',
+    quantity: '6',
+    unitPrice: '$1,110,500',
+    total: '$6,663,000.00',
+  },
+];
+
+export const PaymentCardDetails = [
+  {
+    title: 'ACCOUNT NAME',
+    subtitle: '1023902390',
+  },
+  {
+    title: 'ACCOUNT NUMBER',
+    subtitle: 'March 30th, 2023',
+  },
+  {
+    title: 'ACH ROUTING NO',
+    subtitle: 'May 19th, 2023',
+  },
+  {
+    title: 'BANK NAME',
+    subtitle: 'USD ($)',
+  },
+  {
+    title: 'BANK ADDRESS',
+    subtitle: '1023902390',
+  },
+  {
+    title: 'ACCOUNT NUMBER',
+    subtitle: 'March 30th, 2023',
   },
 ];
