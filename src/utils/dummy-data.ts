@@ -6,6 +6,7 @@ import type {
   InvoiceListProps,
   ActivityCardProps,
   ItemsProps,
+  PaymentCardProps,
 } from 'interfaces/invoice-page.type';
 import SettingIcon from 'assets/icons/setting';
 import BeneficiaryIcon from 'assets/icons/beneficiary';
@@ -197,7 +198,7 @@ export const ItemBoughtData: ItemsProps[] = [
   },
 ];
 
-export const PaymentCardDetails = [
+export const PaymentCardDetails: PaymentCardProps[] = [
   {
     title: 'ACCOUNT NAME',
     subtitle: '1023902390',

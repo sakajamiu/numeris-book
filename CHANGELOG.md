@@ -1,3 +1,4 @@
+- invoice detail modal completed, assesment done! remain to updatethe readme
 - invoice page
 - dashboard page layout
 - lint,husky and tailwind configuration
