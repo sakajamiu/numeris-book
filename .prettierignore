@@ -22,4 +22,4 @@ src/assets/images/*
 src/assets/font/*
 .prettierignore
 index.css
-
+vercel.json

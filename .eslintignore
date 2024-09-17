@@ -23,4 +23,4 @@ src/assets/font/*
 .prettierignore
 index.css
 vite.config.d.ts
-
+vercel.json
