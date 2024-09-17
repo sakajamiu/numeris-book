@@ -1,4 +1,12 @@
-import { useState } from 'react';
+/**
+ * redux action is used to manage the modal only because in the design,
+ * the indicator color changes from blue to black when the modal is opened.
+ * this is not an effective Ui design but implemented anyway for the sake of
+ * the assessment.
+ */
+
+import { useAppDispatch, useAppSelector } from 'store/index';
+import { ModalPayloadAction } from 'store/reducers/modalpayload';
 import { invoiceList } from 'utils/dummy-data';
 import Button from 'components/atoms/a-button';
 import Column from 'components/atoms/a-column-list';
@@ -6,10 +14,12 @@ import clsx from 'clsx';
 import InvoiceDetails from 'components/organisms/o-invoice-detail-modal';
 
 const RecentInvoices = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen } = useAppSelector((state) => state.modalPayload);
+  const dispatch = useAppDispatch();
+  const { setIsOpen } = ModalPayloadAction;
   return (
     <>
-      <InvoiceDetails isOpen={isOpen} setIsOpen={setIsOpen} />
+      <InvoiceDetails isOpen={isOpen} />
       <div className="w-[36rem] rounded-[2.5rem] bg-white p-8">
         <div className="flex justify-between">
           <p className="text-[1.25rem] font-medium leading-[1.554rem] text-black">
@@ -31,7 +41,7 @@ const RecentInvoices = () => {
                 <div
                   className="grid cursor-pointer grid-cols-3 gap-10"
                   role="none"
-                  onClick={() => setIsOpen(true)}
+                  onClick={() => dispatch(setIsOpen({ isOpen: true }))}
                 >
                   <Column
                     className="space-y-2"

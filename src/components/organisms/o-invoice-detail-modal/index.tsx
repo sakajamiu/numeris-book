@@ -1,5 +1,4 @@
 import Modal from 'hoc/modal';
-import { Dispatch, SetStateAction } from 'react';
 import Button from 'components/atoms/a-button';
 import MyPopover from 'hoc/pop-over-wrapper';
 import CheckMarkIcon from 'assets/icons/check-mark';
@@ -9,12 +8,11 @@ import InvoiceReceipt from '../o-invoice-receipt';
 
 interface Props {
   isOpen: boolean;
-  setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-const InvoiceDetails = ({ isOpen, setIsOpen }: Props) => {
+const InvoiceDetails = ({ isOpen }: Props) => {
   return (
-    <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
+    <Modal isOpen={isOpen}>
       <section className="space-y-3">
         <div className="flex justify-between">
           <div>
