@@ -1,3 +1,4 @@
+- adding vercel file for deployment
 - update readme
 - format
 - invoice detail modal completed, assesment done! remain to updatethe readme
