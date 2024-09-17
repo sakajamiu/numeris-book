@@ -11,7 +11,7 @@ function TopNavigation() {
       <div className="flex  h-[4.125rem]  justify-between   px-3 py-6   ">
         <div className="flex items-center ">
           <p className="text-[1.75rem] font-medium  uppercase text-Darkgrey">
-            {state ? state.title : 'Getting Started'}
+            {state ? state.title : 'Invoice'}
           </p>
         </div>
 

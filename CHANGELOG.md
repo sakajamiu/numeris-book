@@ -1,3 +1,4 @@
+- adding meta tag
 - adding vercel file for deployment
 - update readme
 - format
