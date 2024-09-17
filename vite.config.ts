@@ -7,7 +7,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   server:{
-    open:'/dashboard'
+    open:'/dashboard/invoice'
   },
   resolve: {
     alias: {
